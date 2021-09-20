@@ -4,6 +4,7 @@ import {Importer, types} from "sass";
 export type Type = "css" | "style" | "css-text" | "lit-css"
 
 export type SassPluginOptions = {
+    resolveFilter?: RegExp;
     /**
      * Function to transform import path. Not just paths by @import 
      * directive, but also paths imported by ts code.
